@@ -1,0 +1,36 @@
+{
+  "scenes": [
+    {
+      "id": "entrance",
+      "image": "photos/entrance.jpg",
+      "label": "Main Entrance",
+      "rooms": [],
+      "links": [{ "direction": "forward", "to": "commons" }]
+    },
+    {
+      "id": "commons",
+      "image": "photos/commons.jpg",
+      "label": "Commons",
+      "rooms": [],
+      "links": [
+        { "direction": "back", "to": "entrance" },
+        { "direction": "left", "to": "hall-134" },
+        { "direction": "right", "to": "hall-171" }
+      ]
+    },
+    {
+      "id": "hall-134",
+      "image": "photos/hall-134.jpg",
+      "label": "Near Suite 134",
+      "rooms": ["134"],
+      "links": [{ "direction": "back", "to": "commons" }]
+    },
+    {
+      "id": "hall-171",
+      "image": "photos/hall-171.jpg",
+      "label": "Near Suite 171",
+      "rooms": ["171"],
+      "links": [{ "direction": "back", "to": "commons" }]
+    }
+  ]
+}
